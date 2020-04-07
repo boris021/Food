@@ -1,0 +1,76 @@
+*,
+:active,
+:hover,
+:focus {
+  box-sizing: border-box;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  margin-top: 44px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-search {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bfbfbf;
+  padding: 8px 0;
+  padding-left: 35px;
+  width: 690px;
+  height: 40px;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.button {
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-icon {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.button-user {
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.button-cart {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  color: #595959;
+}
