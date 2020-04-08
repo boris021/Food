@@ -7,19 +7,26 @@
   outline-offset: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
+
 }
 
 .header {
   display: flex;
   margin-top: 44px;
+  margin-bottom: 40px;
   align-items: center;
   justify-content: space-between;
 }
 
-.input-search {
+.input {
   background: #ffffff;
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
@@ -29,11 +36,13 @@
   color: #bfbfbf;
   padding: 8px 0;
   padding-left: 35px;
-  width: 690px;
-  height: 40px;
-  background-image: url(../img/Vector.svg);
   background-repeat: no-repeat;
   background-position: left 11px center;
+}
+
+.input-adress {
+  width: 690px;
+  background-image: url(../img/home.svg);
 }
 
 .buttons {
@@ -73,4 +82,123 @@
   background-color: #fff;
   border: 1px solid #d9d9d9;
   color: #595959;
+}
+
+.offer {
+  background: #fff1b8 url(../img/pizza.png) no-repeat top -50px right -90px / 500px;
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  padding: 68px 70px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.offer-title {
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+  color: #302c34;
+  margin-bottom: 15px;
+}
+
+.offer-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  width: 538px;
+  color: #302c34;
+}
+
+.restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.restaurant-heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.input-search {
+  width: 306px;
+  background-image: url(../img/search.svg);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  overflow: hidden;
+  padding-bottom: 34px;
+  margin-bottom: 30px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 0px 24px;
+  margin: 0;
+}
+
+.card-heading-title {
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.card-heading-time {
+  font-size: 12px;
+  color: #ffffff;
+  background: #262626;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.card-info {
+  padding: 0 24px;
+}
+
+.rating {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffc107;
+  margin-right: 26px;
+}
+
+.price,
+.category {
+  font-weight: normal;
+  font-size: 18px;
+  color: #8c8c8c;
+}
+
+.category {
+  cursor: pointer;
+}
+
+.price {
+  margin-right: 10px;
+}
+
+.category::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #8c8c8c;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 10px;
 }
