@@ -9,13 +9,16 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 0) 1.04%,
+    #f5f5f5 100%
+  );
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-
 }
 
 .header {
@@ -41,7 +44,7 @@ body {
 }
 
 .input-adress {
-  width: 690px;
+  flex: 0.8;
   background-image: url(../img/home.svg);
 }
 
@@ -85,7 +88,8 @@ body {
 }
 
 .offer {
-  background: #fff1b8 url(../img/pizza.png) no-repeat top -50px right -90px / 500px;
+  background: #fff1b8 url(../img/pizza.png) no-repeat top -50px right -90px /
+    500px;
   box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
   padding: 68px 70px;
   border-radius: 10px;
@@ -111,11 +115,12 @@ body {
 .restaurant {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 44px;
 }
 
 .restaurant-heading {
+  display: flex;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -123,6 +128,7 @@ body {
 }
 
 .input-search {
+  margin-left: auto;
   width: 306px;
   background-image: url(../img/search.svg);
 }
@@ -142,6 +148,7 @@ body {
   overflow: hidden;
   padding-bottom: 34px;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .card-heading {
@@ -152,10 +159,62 @@ body {
   margin: 0;
 }
 
+.card-heading-block {
+  padding: 20px 24px 0px 24px;
+  margin: 0;
+}
+
 .card-heading-title {
   font-weight: bold;
   font-size: 24px;
   cursor: pointer;
+}
+
+.card-heading-title-text {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.card-heading-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
+}
+
+.buttons-block {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.btn-cart {
+  display: flex;
+  align-items: center;
+  background: #1890ff;
+  border-radius: 2px;
+  padding: 8px 16px;
+  border: 0px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.btn-cart-white {
+  margin-left: 5px;
+}
+
+.btn-prise {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 30px;
+}
+
+.buttons-block {
+  display: flex;
 }
 
 .card-heading-time {
@@ -167,6 +226,8 @@ body {
 }
 
 .card-info {
+  align-items: center;
+  margin: 0;
   padding: 0 24px;
 }
 
@@ -201,4 +262,161 @@ body {
   vertical-align: middle;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  margin-right: 35px;
+}
+
+.footer-block {
+  margin-right: auto;
+}
+
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #595959;
+}
+
+.footer-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .card {
+    flex-basis: 31%;
+  }
+}
+
+@media (max-width: 992px) {
+  .offer {
+    background-position: top right -210px;
+  }
+
+  .rating {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background-position: top right -300px;
+  }
+
+  .offer-subtitle {
+    font-size: 22px;
+    width: 400px;
+  }
+
+  .card {
+    flex-basis: 49%;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .restaurant-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 578px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .input-adress {
+    order: 5;
+    flex: 1;
+    margin-top: 15px;
+  }
+
+  .button-text {
+    display: none;
+  }
+
+  .button {
+    height: 40px;
+  }
+
+  .offer {
+    background-image: none;
+    padding: 20px;
+  }
+
+  .offer-title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .offer-subtitle {
+    font-size: 16px;
+    width: 90%;
+    line-height: 1.2;
+  }
+
+  .restaurant {
+    flex-wrap: wrap;
+  }
+
+  .input-search {
+    order: 2;
+    flex: 100%;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .logo-footer {
+    order: 2;
+  }
+
+  .footer-block {
+    order: 1;
+  }
+
+  .footer-link {
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .social-links {
+    order: 3;
+  }
 }
