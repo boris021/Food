@@ -7,6 +7,7 @@
     <title>Delivery Food - доставка еды на дом!</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,11 +17,11 @@
             <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
             <input type="text" class="input input-adress" placeholder="Адрес доставки">
             <div class="buttons">
-                <button class="button button-user">
+                <button class="btn button-user">
                     <img src="img/user.svg" alt="user" class="button-icon">
-                    <span class="button-text">Войти</span>
+                    <span class="button-text-user">Войти</span>
                 </button>
-                <button class="button button-cart">
+                <button class="btn button-cart" id="cart-button">
                     <img src="img/cart.svg" alt="cart" class="button-icon">
                     <span class="button-text">Корзина</span>
                 </button>
@@ -40,7 +41,7 @@
 
         <section>
             <div class="cards">
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.2s">
                     <img src="img/image.jpg" alt="image" class="card-img">
                     <div class="card-heading">
                         <h2 class="card-heading-title">Пицца плюс</h2>
@@ -55,7 +56,7 @@
                     </div>
                 </a>
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card card wow fadeInUp" data-wow-delay="0.4s">
                     <img src="img/img2.jpg" alt="image" class="card-img">
                     <div class="card-heading">
                         <h2 class="card-heading-title">Тануки </h2>
@@ -70,7 +71,7 @@
                     </div>
                 </a>
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card card wow fadeInUp" data-wow-delay="0.6s">
                     <img src="img/img3.jpg" alt="image" class="card-img">
                     <div class="card-heading">
                         <h2 class="card-heading-title">FoodBand</h2>
@@ -85,7 +86,7 @@
                     </div>
                 </a>
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card card wow fadeInUp" data-wow-delay="0.2s">
                     <img src="img/img4.jpg" alt="image" class="card-img">
                     <div class="card-heading">
                         <h2 class="card-heading-title">Жадина-пицца</h2>
@@ -101,7 +102,7 @@
                 </a>
 
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card card wow fadeInUp" data-wow-delay="0.4s">
                     <img src="img/img5.jpg" alt="image" class="card-img">
                     <div class="card-heading">
                         <h2 class="card-heading-title">Точка еды</h2>
@@ -117,7 +118,7 @@
                 </a>
 
 
-                <a href="restaurant.html" class="card">
+                <a href="restaurant.html" class="card card wow fadeInUp" data-wow-delay="0.6s">
                     <img src="img/img6.jpg" alt="image" class="card-img">
                     <div class="card-heading">
                         <h2 class="card-heading-title">PizzaBurger</h2>
@@ -156,6 +157,58 @@
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="modal-block">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-row">
+                <span class="modal-row-title">Ролл угорь стандарт</span>
+                <span class="modal-row-price">250 тг</span>
+                <div class="modal-row-buttons">
+                    <button class="modal-row-btn">-</button>
+                    <span class="counter">1</span>
+                    <button class="modal-row-btn">+</button>
+                </div><!-- /.modal-row-buttons -->
+            </div>
+            <div class="modal-row">
+                <span class="modal-row-title">Ролл угорь стандарт</span>
+                <span class="modal-row-price">250 тг</span>
+                <div class="modal-row-counter">
+                    <button class="modal-row-btn">-</button>
+                    <span class="counter">1</span>
+                    <button class="modal-row-btn">+</button>
+                </div><!-- /.modal-row-buttons -->
+            </div>
+            <div class="modal-row">
+                <span class="modal-row-title">Ролл угорь стандарт</span>
+                <span class="modal-row-price">250 тг</span>
+                <div class="modal-row-buttons">
+                    <button class="modal-row-btn">-</button>
+                    <span class="counter">1</span>
+                    <button class="modal-row-btn">+</button>
+                </div><!-- /.modal-row-buttons -->
+            </div>
+            <div class="modal-row">
+                <span class="modal-row-title">Ролл угорь стандарт</span>
+                <span class="modal-row-price">250 тг</span>
+                <div class="modal-row-buttons">
+                    <button class="modal-row-btn">-</button>
+                    <span class="counter">1</span>
+                    <button class="modal-row-btn">+</button>
+                </div><!-- /.modal-row-buttons -->
+            </div>
+            <div class="modal-footer">
+                <span class="footer-price">1250 тг</span>
+                <button class="footer-blue btn">Оформить заказ</button>
+                <button class="footer-white btn">Отмена</button>
+            </div>
+            <!-- /.modal-row -->
+        </div>
+    </div>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 
